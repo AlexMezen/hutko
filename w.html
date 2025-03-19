@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow, noarchive" />
+    <link rel="canonical" href="https://domain/" />
+    <link rel="stylesheet" href="style.css">
+    <title>Text Editor</title>
+    <meta
+      name="description"
+      content="Text editor with drag and drop functionality"
+    />
+    <style>
+ 
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Text Editor
+        <span class="tooltip-container">
+          <span class="tooltip-icon">?</span>
+          <span class="tooltip-text">
+            This application has two modes. <br />
+            Normal mode - swapping letters with each other <br />
+            To swap letters, simply drag them onto other letters. <br />
+            Shift mode - moving letters to another line without swapping <br />
+            To move letters to another line, hold Shift and drag them to the desired position. <br />
+            The application supports text color changes.
+          </span>
+        </span>
+      </h1>
+
+      <p>
+        Be sure to hover over the "?" next to the title to see the instructions!
+      </p>
+
+      <div class="text-form">
+        <input type="text" class="text-input" placeholder="Enter text" />
+        <button class="add-button">Add</button>
+        <button class="clear-button">Clear</button>
+      </div>
+
+      <div class="color-picker">
+        <span>Text color: </span>
+        <div
+          class="color-option"
+          style="background-color: #000000"
+          data-color="#000000"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #ff0000"
+          data-color="#ff0000"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #00ff00"
+          data-color="#00ff00"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #0000ff"
+          data-color="#0000ff"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #ffcc00"
+          data-color="#ffcc00"
+        ></div>
+      </div>
+
+      <div class="text-display"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
